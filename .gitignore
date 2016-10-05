@@ -1,4 +1,59 @@
-# Built application files
+#Built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Windows thumbnail db
+Thumbs.db
+
+# OSX files
+.DS_Store
+
+# Eclipse project files
+.classpath
+.project
+
+# Android Studio & IntelliJ
+.idea
+*.iml
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
+
+# Gradle
+gradle/
+gradlew
+gradlew.bat
+
+#################
+## Xcode
+#################
+build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+profile
+*.moved-aside
+crashlytics-build.properties
+com_crashlytics_export_strings.xml# Built application files
 *.apk
 *.ap_
 
