@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_location_picker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_min"
+    android:paddingLeft="@dimen/margin_min"
+    android:paddingRight="@dimen/margin_min"
+    android:paddingTop="@dimen/margin_min"
+    tools:context="rodriguez.marta.locationpicker.ui.LocationPickerActivity">
+
+    <LinearLayout android:id="@+id/locationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/location_view_bg"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="3dp">
+        <ImageView android:id="@+id/locationImageView"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:srcCompat="@drawable/ic_location_primary_18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_min" />
+        <TextView android:id="@+id/locationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="@string/no_location_selected"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/map"
+        tools:context="rodriguez.marta.locationpicker.ui.LocationPickerActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/confirmLocationBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_this_location"/>
+        <android.support.v4.widget.ContentLoadingProgressBar
+            android:id="@+id/loading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            style="@style/Base.Widget.AppCompat.ProgressBar"
+            android:visibility="visible"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</LinearLayout>

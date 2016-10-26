@@ -5,8 +5,8 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.0'
-
+        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -16,6 +16,17 @@ allprojects {
     repositories {
         jcenter()
     }
+}
+
+ext {
+    compileSdkVersion = 25
+    buildToolsVersion = '25.0.0'
+
+    minSdkVersion = 16
+    targetSdkVersion = 25
+
+    SUPPORT_LIB_VERSION = '25.0.0'
+    GOOGLE_PLAY_SERVICES_VERSION = '9.6.1'
 }
 
 task clean(type: Delete) {

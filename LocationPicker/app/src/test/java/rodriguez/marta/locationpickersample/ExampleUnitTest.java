@@ -1,4 +1,4 @@
-package rodriguez.marta.locationpicker;
+package rodriguez.marta.locationpickersample;
 
 import org.junit.Test;
 

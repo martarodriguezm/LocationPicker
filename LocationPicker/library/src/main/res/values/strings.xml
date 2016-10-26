@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">LocationPicker</string>
+
+    <string name="location_picker">Seleccionar Localización</string>
+    <string name="selected_position">Posición Seleccionada</string>
+    <string name="select_this_location">Seleccionar esta ubicación</string>
+    <string name="no_location_selected">Sin Localización</string>
+    <string name="connection_error">¡Vaya! Parece que hay un error con la conexión.</string>
+    <string name="ok">Aceptar</string>
+
 </resources>
